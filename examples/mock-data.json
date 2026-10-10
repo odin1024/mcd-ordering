@@ -1,0 +1,131 @@
+{
+  "stores": [
+    {
+      "storeCode": "1950801",
+      "storeName": "麦当劳北京学院国际大厦餐厅",
+      "address": "知春路1号",
+      "distance": 0,
+      "longitude": 116.3452,
+      "latitude": 39.9805,
+      "reservation": true
+    },
+    {
+      "storeCode": "1950702",
+      "storeName": "麦当劳北京路松街餐厅",
+      "address": "路松街地铁站A口旁",
+      "distance": 850,
+      "longitude": 116.3521,
+      "latitude": 39.9754,
+      "reservation": false
+    },
+    {
+      "storeCode": "1950705",
+      "storeName": "麦当劳北京中关村大街餐厅",
+      "address": "中关村大街19号",
+      "distance": 1200,
+      "longitude": 116.3167,
+      "latitude": 39.9844,
+      "reservation": true
+    }
+  ],
+  "categories": [
+    {
+      "name": "人气热卖",
+      "meals": [
+        { "code": "9900016076", "name": "“我就喜欢”鸡薯双全盒", "price": 1590, "tags": ["心形薯饼同款比心"], "desc": "心形薯饼+麦乐鸡组合，人气爆款", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016076_600.png" },
+        { "code": "9900016075", "name": "拉丝芝士牛堡", "price": 2800, "tags": ["浓郁奶香拉丝芝士"], "desc": "双层芝士拉丝牛堡，奶香浓郁", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016075_600.png" },
+        { "code": "9900016073", "name": "韩式辣椒黄油鸡腿堡", "price": 2600, "tags": ["韩式辣椒黄油风味"], "desc": "韩式风味鸡腿堡，辣椒黄油酱", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016073_600.png" },
+        { "code": "9900004064", "name": "精选单人餐三件套", "price": 3450, "tags": ["爆款"], "desc": "新升级板烧鸡腿堡+中薯条+可乐中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900004064_600.png" },
+        { "code": "9900016077", "name": "韩式芝士风味鸡腿堡", "price": 2650, "tags": ["韩式芝士风味酱上新"], "desc": "韩式芝士酱新风味", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016077_600.png" },
+        { "code": "9900011056", "name": "板烧鸡腿堡", "price": 2500, "tags": [], "desc": "经典板烧鸡腿堡", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900011056_600.png" }
+      ]
+    },
+    {
+      "name": "精选单人餐",
+      "meals": [
+        { "code": "9900014837", "name": "巨无霸经典单人餐", "price": 3900, "tags": ["经典精选", "全球爆款", "全天供应"], "desc": "巨无霸+中薯条+可乐中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900014837_600.png" },
+        { "code": "9900014974", "name": "麦辣鸡腿堡单人餐", "price": 3600, "tags": ["经典精选", "全球爆款", "全天供应"], "desc": "麦辣鸡腿堡+中薯条+可乐中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900014974_600.png" },
+        { "code": "9900004236", "name": "双层鳕鱼堡单人餐", "price": 4000, "tags": ["麦金卡"], "desc": "双层鳕鱼堡+中薯条+可乐", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900004236_600.png" },
+        { "code": "9900010110", "name": "安格斯厚牛堡单人餐", "price": 4600, "tags": ["麦金卡"], "desc": "安格斯厚牛堡+中薯条+可乐", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900010110_600.png" },
+        { "code": "9900006957", "name": "麦香鱼单人餐", "price": 3400, "tags": ["麦金卡"], "desc": "麦香鱼+中薯条+可乐", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900006957_600.png" }
+      ]
+    },
+    {
+      "name": "小食甜品/其他",
+      "meals": [
+        { "code": "521954", "name": "薯条（中）", "price": 1200, "tags": [], "desc": "金黄酥脆薯条", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521954_600.png" },
+        { "code": "521986", "name": "麦辣鸡翅（2块）", "price": 1300, "tags": [], "desc": "香辣鸡翅两件", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521986_600.png" },
+        { "code": "9900016082", "name": "苹果派", "price": 900, "tags": [], "desc": "酥脆苹果派", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016082_600.png" },
+        { "code": "4810", "name": "薯条（大）", "price": 1500, "tags": [], "desc": "大份金黄薯条", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_4810_600.png" },
+        { "code": "514782", "name": "麦辣鸡腿堡", "price": 2300, "tags": [], "desc": "经典麦辣鸡腿堡", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_514782_600.png" }
+      ]
+    },
+    {
+      "name": "巨无霸牛鱼肉堡",
+      "meals": [
+        { "code": "9900016301", "name": "巨无霸", "price": 2500, "tags": ["经典"], "desc": "双层牛肉饼经典巨无霸", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900016301_600.png" },
+        { "code": "9900000888", "name": "麦香鱼", "price": 2300, "tags": [], "desc": "鳕鱼堡经典款", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900000888_600.png" }
+      ]
+    },
+    {
+      "name": "饮品",
+      "meals": [
+        { "code": "521817", "name": "可乐（中杯）", "price": 1100, "tags": [], "desc": "冰爽可乐中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521817_600.png" },
+        { "code": "9900008751", "name": "橙汁", "price": 1200, "tags": [], "desc": "鲜榨橙汁", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900008751_600.png" },
+        { "code": "3010", "name": "雪碧（中杯）", "price": 1100, "tags": [], "desc": "清爽雪碧中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_3010_600.png" },
+        { "code": "6362", "name": "热美式咖啡", "price": 1300, "tags": [], "desc": "香醇热美式", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_6362_600.png" }
+      ]
+    },
+    {
+      "name": "麦咖啡™",
+      "meals": [
+        { "code": "507411", "name": "拿铁（中杯）", "price": 1800, "tags": [], "desc": "香浓拿铁中杯", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_507411_600.png" },
+        { "code": "507409", "name": "卡布奇诺（中杯）", "price": 1800, "tags": [], "desc": "经典卡布奇诺", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_507409_600.png" }
+      ]
+    },
+    {
+      "name": "蘸酱炸鸡",
+      "meals": [
+        { "code": "521966", "name": "麦乐鸡（5块）", "price": 1400, "tags": [], "desc": "经典麦乐鸡5块", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521966_600.png" },
+        { "code": "521797", "name": "麦乐鸡（20块）", "price": 4800, "tags": [], "desc": "分享装麦乐鸡20块", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_521797_600.png" }
+      ]
+    },
+    {
+      "name": "随心配1+1",
+      "meals": [
+        { "code": "9900013304", "name": "随心配1+1随心选", "price": 1900, "tags": ["超值"], "desc": "任意两款随心配", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900013304_600.png" },
+        { "code": "9900015568", "name": "随心配1+1双份堡", "price": 2200, "tags": [], "desc": "双堡随心配", "image": "https://menu-img.mcd.cn/pcm/prod/menu/ProductPool/product/MS_9900015568_600.png" }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "1030839610000569073616876012",
+      "orderType": "1",
+      "createTime": "2026-04-01 20:57:26",
+      "beType": "1",
+      "beCode": "",
+      "storeCode": "1950702",
+      "storeName": "麦当劳北京路松街餐厅",
+      "orderStatus": "订单已完成",
+      "orderProductList": [
+        { "productCode": "9900004064", "productName": "精选单人餐三件套", "quantity": 1, "comboItemList": [{ "productCode": "1406", "name": "新升级板烧鸡腿堡", "quantity": 1 }, { "productCode": "4810", "name": "中薯条", "quantity": 1 }, { "productCode": "3050", "name": "可乐中杯", "quantity": 1 }] }
+      ],
+      "realTotalAmount": "34.5"
+    },
+    {
+      "orderId": "1030970540000654803747825219",
+      "orderType": "1",
+      "createTime": "2025-12-26 19:46:03",
+      "beType": "1",
+      "beCode": "",
+      "storeCode": "1950702",
+      "storeName": "麦当劳北京路松街餐厅",
+      "orderStatus": "订单已完成",
+      "orderProductList": [
+        { "productCode": "9900016076", "productName": "“我就喜欢”鸡薯双全盒", "quantity": 2 }
+      ],
+      "realTotalAmount": "31.8"
+    }
+  ]
+}

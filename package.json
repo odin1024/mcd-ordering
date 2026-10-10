@@ -1,0 +1,24 @@
+{
+  "name": "mcd-ordering",
+  "version": "1.0.0",
+  "description": "麦门点单 —— 基于麦当劳官方 MCP 的全流程点餐应用：附近门店、真实菜单、选配计价、一键下单（双模式：演示/真实）。",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "mcd",
+    "mcp",
+    "麦当劳",
+    "ordering",
+    "点餐",
+    "programmer-day",
+    "hackathon"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
