@@ -18,11 +18,11 @@
   };
 
   const el = {
-    modeBadge: $('#modeBadge'), modeText: $('#modeText'), footMode: $('#footMode'),
+    modeStrip: $('#modeStrip'), modeText: $('#modeText'), footMode: $('#footMode'),
     steps: $$('#steps .step'),
     panelStores: $('#panelStores'), panelMenu: $('#panelMenu'),
     panelCheckout: $('#panelCheckout'), panelResult: $('#panelResult'),
-    storeGrid: $('#storeGrid'), btnRefreshStores: $('#btnRefreshStores'),
+    storeGrid: $('#storeGrid'), btnRefreshStores: $('#btnRefreshStores'), storeNote: $('#storeNote'),
     catList: $('#catList'), mealGrid: $('#mealGrid'),
     menuStoreName: $('#menuStoreName'), btnChangeStore: $('#btnChangeStore'),
     mealModal: $('#mealModal'), mealModalMask: $('#mealModalMask'), mealModalBody: $('#mealModalBody'), btnCloseModal: $('#btnCloseModal'),
@@ -77,14 +77,14 @@
       state.mock = h.mock;
       applyMode(!h.mock);
     } catch (e) {
-      el.modeBadge.classList.add('demo');
+      el.modeStrip.classList.add('demo');
       el.modeText.textContent = '离线';
     }
     await loadStores();
   }
   function applyMode(real) {
-    el.modeBadge.classList.toggle('real', real);
-    el.modeBadge.classList.toggle('demo', !real);
+    el.modeStrip.classList.toggle('real', real);
+    el.modeStrip.classList.toggle('demo', !real);
     el.modeText.textContent = real ? '真实模式 · 官方 MCP' : '演示模式 · Mock 数据';
     el.footMode.textContent = real ? '真实模式：直连麦当劳官方 MCP' : '演示模式：内置模拟数据（配置 MCD_MCP_TOKEN 即切换真实）';
     el.orderTip.textContent = real ? '将调用麦当劳官方接口创建真实订单' : '演示模式：将生成模拟订单，不会真实扣款';
@@ -109,6 +109,9 @@
   }
   function renderStores() {
     if (!state.stores.length) { el.storeGrid.innerHTML = '<div class="loading card-loading">暂无门店，试试刷新</div>'; return; }
+    el.storeNote.textContent = state.mock
+      ? '演示数据 · 以下为固定示例门店（配置 MCD_MCP_TOKEN 后按账号获取真实附近/收藏门店）'
+      : '按麦当劳官方接口获取的附近 / 收藏门店，随账号与位置实时变化';
     el.storeGrid.innerHTML = state.stores.map((s) => `
       <div class="store-card ${state.store && state.store.storeCode === s.storeCode ? 'selected' : ''}" data-code="${s.storeCode}">
         <div class="s-name">${s.storeName}</div>

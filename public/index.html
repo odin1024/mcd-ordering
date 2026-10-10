@@ -20,10 +20,12 @@
         <span class="brand-sub">MCD&nbsp;ORDERING&nbsp;·&nbsp;官方 MCP 全流程点餐</span>
       </div>
     </div>
-    <div class="mode-badge" id="modeBadge">
-      <span class="dot"></span><span id="modeText">连接中…</span>
-    </div>
   </header>
+
+  <!-- ========== 模式状态条（独立一行，避免挤压标题） ========== -->
+  <div class="status-strip" id="modeStrip">
+    <span class="dot"></span><span id="modeText">连接中…</span>
+  </div>
 
   <!-- ========== 步骤条 ========== -->
   <nav class="steps" id="steps">
@@ -41,6 +43,7 @@
         <h2>选择门店 <span class="hint">真实数据 · 到店自取</span></h2>
         <button class="ghost-btn" id="btnRefreshStores">刷新</button>
       </div>
+      <div class="store-note" id="storeNote"></div>
       <div class="store-grid" id="storeGrid">
         <div class="loading card-loading">正在获取附近门店…</div>
       </div>

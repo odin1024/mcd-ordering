@@ -30,28 +30,32 @@ body {
 
 /* ===== 顶部 ===== */
 .topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 20px 2px 14px;
+  display: flex; align-items: center;
+  padding: 20px 2px 6px;
 }
-.brand { display: flex; align-items: center; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1; }
 .brand-logo {
-  width: 44px; height: 44px; border-radius: 12px;
+  width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
   background: linear-gradient(135deg, var(--gold), #ff8a00);
   color: #1a1405; font-weight: 900; font-size: 24px;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 14px rgba(255,199,44,.35);
 }
+.brand-text { min-width: 0; }
 .brand-text h1 { font-size: 21px; letter-spacing: .5px; }
-.brand-sub { font-size: 10.5px; color: var(--muted); letter-spacing: .8px; }
-.mode-badge {
-  display: flex; align-items: center; gap: 7px;
-  padding: 6px 13px; border-radius: 20px;
+.brand-sub { font-size: 10.5px; color: var(--muted); letter-spacing: .8px; white-space: nowrap; }
+
+/* ===== 模式状态条（独立全宽，不挤压标题） ===== */
+.status-strip {
+  display: flex; align-items: center; gap: 8px;
+  margin: 4px 0 0; padding: 7px 14px;
+  border-radius: 12px;
   background: var(--card); border: 1px solid var(--line);
   font-size: 12px; color: var(--muted);
 }
-.mode-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #888; }
-.mode-badge.real .dot { background: var(--green); box-shadow: 0 0 8px var(--green); }
-.mode-badge.demo .dot { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
+.status-strip .dot { width: 8px; height: 8px; border-radius: 50%; background: #888; flex-shrink: 0; }
+.status-strip.real .dot { background: var(--green); box-shadow: 0 0 8px var(--green); }
+.status-strip.demo .dot { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
 
 /* ===== 步骤条 ===== */
 .steps { display: flex; gap: 8px; margin: 6px 0 18px; }
@@ -80,6 +84,11 @@ body {
 .panel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
 .panel-head h2 { font-size: 18px; }
 .hint { font-size: 11px; color: var(--muted); font-weight: 400; margin-left: 8px; }
+.store-note {
+  font-size: 11px; color: var(--muted); margin: 0 2px 10px;
+  padding: 6px 10px; border-radius: 8px;
+  background: rgba(255,199,44,.07); border: 1px dashed rgba(255,199,44,.25);
+}
 
 /* ===== 按钮 ===== */
 .primary-btn {
