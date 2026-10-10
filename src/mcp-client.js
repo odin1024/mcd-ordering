@@ -285,6 +285,11 @@ class McpClient {
       case 'create-order': {
         const items = args.items || [];
         const seq = String(Date.now()).slice(-8);
+        const allMeals = (d.categories || []).flatMap((c) => c.meals || []);
+        const total = items.reduce((t, it) => {
+          const m = allMeals.find((x) => x.code === it.productCode);
+          return t + (m && m.price ? m.price : 1590) * (it.quantity || 1);
+        }, 0);
         return JSON.stringify({
           success: true, code: 200, message: '请求成功',
           data: {
@@ -294,8 +299,8 @@ class McpClient {
             orderType: String(args.orderType || 1),
             createTime: new Date().toISOString().replace('T', ' ').slice(0, 19),
             orderStatus: '订单已提交',
-            realTotalAmount: '15.9',
-            orderProductList: items.map((it) => ({ productCode: it.productCode, productName: ((d.categories || []).flatMap((c) => c.meals || [])).find((x) => x.code === it.productCode)?.name || it.productCode, quantity: it.quantity || 1 })),
+            realTotalAmount: (total / 100).toFixed(2),
+            orderProductList: items.map((it) => ({ productCode: it.productCode, productName: allMeals.find((x) => x.code === it.productCode)?.name || it.productCode, quantity: it.quantity || 1 })),
           },
         });
       }
